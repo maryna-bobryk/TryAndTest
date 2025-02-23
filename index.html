@@ -1,19 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TryAndTest</title>
-</head>
-<body>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Manipulation mit ID und Klasse</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="main-title">Willkommen auf meiner Übungsseite</h1>
+      <nav id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#section1" class="nav-link">Abschnitt 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section2" class="nav-link">Abschnitt 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section3" class="nav-link">Abschnitt 3</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1" class="content-section">
+        <h2 class="section-title">Abschnitt 1: Einführung</h2>
+        <p id="intro" class="text highlight">
+          Dies ist der erste Abschnitt mit einer Einführung in DOM-Manipulation.
+        </p>
+        <button id="toggle-highlight">Hervorhebung umschalten</button>
+      </section>
+
+      <section id="section2" class="content-section">
+        <h2 class="section-title">Formular zur Eingabe</h2>
+        <form id="user-form">
+          <label for="username" class="form-label">Benutzername:</label>
+          <input
+            type="text"
+            id="username"
+            class="form-input"
+            placeholder="Dein Benutzername"
+          />
+
+          <label for="email" class="form-label">E-Mail:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Deine E-Mail"
+          />
+
+          <button type="submit" id="submit-btn" class="form-button">
+            Absenden
+          </button>
+        </form>
+      </section>
+
+      <section id="section3" class="content-section">
+        <h2 class="section-title">To-Do-Liste</h2>
+        <ul class="list">
+          <li class="list-item">HTML</li>
+          <li class="list-item">CSS</li>
+          <li class="list-item">JavaScript</li>
+        </ul>
+        <input
+          type="text"
+          id="new-task"
+          class="task-input"
+          placeholder="Neue Aufgabe"
+        />
+        <button id="add-task-btn" class="task-button">
+          Aufgabe hinzufügen
+        </button>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <p class="footer-text">&copy; 2025 DOM-Manipulationsübungen</p>
+    </footer>
     <!-- <script src="./js/module-1-1.js"></script> -->
     <!-- <script src="./js/module-2-1.js"></script> -->
     <!-- <script src="./js/module-2-2.js"></script> -->
     <!-- <script src="./js/module-3-1.js"></script> -->
-    <script src="./js/module-6-1-this.js"></script>
+    <!-- <script src="./js/module-6-1-this.js"></script> -->
     <!-- <script src="./js/module-3-2.js"></script> -->
     <!-- <script src="./js/callbackFunction.js"></script> -->
     <!-- <script src="./js/flatMap.js"></script> -->
-   
-</body>
+    <!-- <script src="./js/samstag.js"></script> -->
+    <!-- <script src="./js/module-7.js"></script> -->
+    <!-- <script src="./js/module-9-1.js"></script> -->
+    <script src="./js/module-12-1.js"></script>
+  </body>
 </html>
